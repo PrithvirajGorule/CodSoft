@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: cyan;
+  animation: rotateAnimation 5s linear infinite;
+}
+
+h2 {
+  color: blue;
+  animation: fadeInAnimation 2s ease;
+}
+
+section {
+  padding: 40px;
+}
+
+/* Style the contact form */
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#contact-form button {
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Keyframe animations */
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
